@@ -13,23 +13,39 @@
 
   <body>
 
-    <div id="content">
-      <!-- ADD YOUR HTML CONTENT HERE! -->
-      <div align="right"><a href="index.html">Home</a></div>
-      <div id="meta"></div>
-
-    </div>
-
-    <!-- **** DO NO EDIT BELOW THIS LINE **** -->
-    <!-- * **** **** **** **** **** **** **** -->
-    <div id="score">
-      <!-- THIS IS WHERE THE SCORE GOES AUTOMATICALLY -->
-    </div>
+    <div class="header">How to use the Verovio App</div>
+    <div class="meta"></div>
+    <div id="app">Verovio is loading...</div>
+    <script type="module">
+        import 'https://www.verovio.org/javascript/app/verovio-app.js';
+        
+        const options = {
+            defaultView: 'responsive', // default is 'responsive', alternative is 'document'
+            defaultZoom: 3, // 0-7, default is 4
+            enableResponsive: true, // default is true
+            enableDocument: true // default is true
+        }
+        
+        // A MusicXML file
+        var file = 'data/example.mei';
+        // A MEI file
+        //var file = 'https://www.verovio.org/editor/brahms.mei';
+        
+        const app = new Verovio.App(document.getElementById("app"), options);
+        fetch(file)
+            .then(function(response) {
+                return response.text();
+            })
+            .then(function(text) {
+                app.loadData(text);
+            });
+    </script>
+    
     <!-- THIS CALLS THE SCRIPT THAT GETS THE MEI SCORE -->
    <script src="js/Sie_liebten.js"></script>
     <script>
       var xhr = new XMLHttpRequest()
-      xhr.open('GET', 'data/Sie_liebten.mei') // <-- change this to the right file
+      xhr.open('GET', 'data/example.mei') // <-- change this to the right file
       xhr.send(null)
       /* Deal with the response */
       xhr.onreadystatechange = function () {
@@ -46,6 +62,7 @@
         }
       }
     </script>
+    
   </body>
 
 </html>

@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <title>Clara Schumann, &ldquo;Sie liebten&rdquo;</title>
+    <meta charset="utf-8">
+    <meta name="description" content="My project">
+    <meta name="author" content="Me">
+    <link rel="stylesheet" href="css/style.css" media="all" />
+    <script src="js/verovio-toolkit.js"></script>
+    <script src="js/utils.js"></script>
+  </head>
+
+  <body>
+
+    <div id="content">
+      <!-- ADD YOUR HTML CONTENT HERE! -->
+      <div align="right"><a href="index.html">Home</a></div>
+      <div id="meta"></div>
+
+    </div>
+
+    <!-- **** DO NO EDIT BELOW THIS LINE **** -->
+    <!-- * **** **** **** **** **** **** **** -->
+    <div id="score">
+      <!-- THIS IS WHERE THE SCORE GOES AUTOMATICALLY -->
+    </div>
+    <!-- THIS CALLS THE SCRIPT THAT GETS THE MEI SCORE -->
+   <script src="js/Sie_liebten.js"></script>
+    <script>
+      var xhr = new XMLHttpRequest()
+      xhr.open('GET', 'data/Sie_liebten.mei') // <-- change this to the right file
+      xhr.send(null)
+      /* Deal with the response */
+      xhr.onreadystatechange = function () {
+        var DONE = 4
+        var OK = 200
+        if (xhr.readyState === DONE) {
+          if (xhr.status === OK) {
+            var parser = new DOMParser()
+            var meiDoc = parser.parseFromString(xhr.responseText,"text/xml")
+            document.querySelector("#meta").innerHTML += "<h1>" + meiDoc.querySelector("[*|id='m-10']").textContent + "</h1>"
+            document.querySelector("#meta").innerHTML += "<p><strong>Composer:</strong> <a href=\"" + meiDoc.querySelector("[*|id='m-8']").getAttribute('authURI') + "\">" + meiDoc.querySelector("[*|id='m-11']").textContent + "</a></p>"
+            document.querySelector("#meta").innerHTML += "<p><strong>Lyricist:</strong> " + meiDoc.querySelector("[*|id='m-13']").textContent + "</p>"
+          }
+        }
+      }
+    </script>
+  </body>
+
+</html>

@@ -4,7 +4,8 @@
   <meiHead>
     <fileDesc>
       <titleStmt>
-        <title>title of encoded example</title>
+        <!-- This is my fancy comment -->
+        <title>title of encoded example </title>
       </titleStmt>
       <pubStmt />
     </fileDesc>
@@ -13,5 +14,7 @@
         <work />
     </workDesc>
   </meiHead>
-  <music />
+  <music>
+    
+  </music>
 </mei>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/3.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei">
+  <meiHead>
+    <fileDesc>
+      <titleStmt>
+        <!-- This is my fancy comment -->
+        <title>Jesu, Jesu, Du bist mein </title>
+      </titleStmt>
+      <pubStmt />
+    </fileDesc>
+    <encodingDesc />
+    <workDesc>
+        <work />
+    </workDesc>
+  </meiHead>
+  <music>
+    <body>
+        <mdiv>
+            <score>
+                <scoreDef>
+                    <staffGrp>
+                        <staffDef n="1" lines="5" clef.shape="G" clef.line="2" meter.count="4" meter.unit="4"/>
+                        <staffDef n="2" lines="5" clef.shape="F" clef.line="4" meter.count="4" meter.unit="4"/>
+                    </staffGrp>
+                </scoreDef>
+                <section>
+                    <measure n="1" right="end">
+                        <staff n="1">
+                           <layer n="1">
+                               <note pname="d" oct="5" dur="4" stem.dir="up"/>
+                               <beam>
+                                 <note pname="e" oct="5" dur="8" stem.dir="up"/>
+                                 <note pname="d" oct="5" dur="8" stem.dir="up"/>
+                               </beam>
+                               <note pname="d" oct="5" dur="2" stem.dir="up"/>
+                           </layer>
+                           <layer n="2">
+                             <note pname="g" oct="4" dur="4" stem.dir="down">
+                                <verse n="1">
+                                  <syl>Du</syl>
+                                </verse>
+                                <verse n="2">
+                                  <syl>Du</syl>
+                                </verse>
+                             </note>
+                             <note pname="g" oct="4" dur="4" stem.dir="down">
+                               <verse n="1">
+                                 <syl con="u">bist</syl>
+                               </verse>
+                               <verse n="2">
+                                 <syl con="u">bist</syl>
+                               </verse>
+                             </note>
+                             <note pname="g" oct="4" dur="2" stem.dir="down">
+                               <verse n="1">
+                                 <syl con="u">mein,</syl>
+                               </verse>
+                               <verse n="2">
+                                 <syl con="u">mein,</syl>
+                               </verse>
+                             </note>
+                           </layer>
+                        </staff>
+                        <staff n="2">
+                           <layer n="1">
+                               <note pname="d" oct="4" dur="4" stem.dir="up"/>
+                               <note pname="c" oct="4" dur="4" stem.dir="up"/>
+                               <note pname="c" oct="4" dur="4" stem.dir="up"/>
+                               <note pname="b" oct="3" dur="4" accid="n" stem.dir="up"/>
+                           </layer>
+                           <layer n="2">
+                               <note pname="b" oct="2" dur="4" accid="n" stem.dir="down"/>
+                               <note pname="c" oct="3" dur="4" stem.dir="down"/>
+                               <note pname="g" oct="2" dur="2" stem.dir="down"/>
+                           </layer>
+                        </staff>
+                    <slur tstamp="2" tstamp2="2.5" curvedir="above" staff="1" layer="1"/>
+                    <slur tstamp="3" tstamp2="4" curvedir="above" staff="2" layer="1"/>
+                    </measure>
+                </section>
+            </score>
+        </mdiv>
+    </body>
+  </music>
+</mei>

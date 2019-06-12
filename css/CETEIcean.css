@@ -1872,6 +1872,7 @@ mei-pubstmt > mei-date::after {
 mei-pubstmt > mei-availability > mei-userestrict {
   font-style: italic;
   display: block;
+  color: blue;
 }
 
 

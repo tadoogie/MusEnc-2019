@@ -1808,13 +1808,17 @@ tei-zone {
 }
 
 mei-filedesc mei-titlestmt mei-title {
-  font-size: 24pt;
+  font-size: 18pt;
   color: red;
   display: block;
 }
 
 mei-sourcedesc {
   display:none;
+}
+
+mei-title [id="title12345"] {
+  font-size: 24pt;
 }
 
 /* styles for html shell and html elements in TEI (e.g.,<a> and <img>) */

@@ -1851,6 +1851,19 @@ mei-filedesc > mei-titlestmt> mei-respstmt > mei-persname[role="encoder"]::after
   margin-top: 2em;
 }
 
+mei-pubstmt > mei-respstmt {
+  display: none;
+}
+
+mei-pubstmt > mei-address {
+  display: none;
+}
+
+mei-pubstmt > mei-availability > mei-userrestrict {
+  font-style: italic;
+  display: block;
+}
+
 
 /* styles for html shell and html elements in TEI (e.g.,<a> and <img>) */
 html > body {

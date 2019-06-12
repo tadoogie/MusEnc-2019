@@ -1824,7 +1824,7 @@ mei-filedesc > mei-titlestmt > mei-title {
 
 mei-filedesc > mei-titlestmt > mei-respstmt {
   display: block;
-  margin-top: 2em;
+  margin-top: 1em;
 }
 
 mei-filedesc > mei-titlestmt> mei-respstmt > mei-persname[role="composer"]::before {

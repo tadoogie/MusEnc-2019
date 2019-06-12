@@ -1811,6 +1811,10 @@ tei-zone {
   font-size: 24pt;
 }
 
+mei-title[type="subordinate"] {
+  font-size: 18pt;
+}
+
 mei-filedesc mei-titlestmt mei-title {
   color: blue;
   display: block;

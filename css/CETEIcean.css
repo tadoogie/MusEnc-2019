@@ -1872,7 +1872,7 @@ mei-pubstmt > mei-date::after {
 mei-pubstmt > mei-availability > mei-userestrict {
   font-style: italic;
   display: block;
-  margin-top: 1em;
+  margin-top: 0.5em;
 }
 
 mei-seriesstmt {

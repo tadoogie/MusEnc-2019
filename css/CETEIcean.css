@@ -1816,7 +1816,7 @@ mei-title[type="subordinate"] {
 }
 
 mei-filedesc > mei-titlestmt > mei-title {
-  color: blue;
+  color: red;
   display: block;
 }
 

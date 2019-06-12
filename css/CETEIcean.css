@@ -1821,6 +1821,7 @@ mei-filedesc > mei-titlestmt > mei-title {
 }
 
 mei-filedesc > mei-titlestmt > mei-respstmt:before {
+  font-weight: bold;
   content: "Composer: ";
 }
 

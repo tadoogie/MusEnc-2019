@@ -1865,7 +1865,7 @@ mei-pubstmt > mei-date::before {
 }
 
 mei-pubstmt > mei-date::after {
-  content: '\a';
+  content: '\a \a';
   white-space: pre;
 }
 

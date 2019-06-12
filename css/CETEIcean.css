@@ -1813,6 +1813,10 @@ mei-filedesc mei-titlestmt mei-title {
   display: block;
 }
 
+mei-sourcedesc {
+  display:none;
+}
+
 /* styles for html shell and html elements in TEI (e.g.,<a> and <img>) */
 html > body {
   margin: 0;

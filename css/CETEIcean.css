@@ -1807,7 +1807,7 @@ tei-zone {
   /* Empty Rule Set */
 }
 
-mei-title [id="title12345"] {
+#title12345 {
   font-size: 24pt;
 }
 

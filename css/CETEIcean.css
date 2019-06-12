@@ -1825,7 +1825,10 @@ mei-filedesc > mei-titlestmt > mei-title {
 #pers12345::before {
   font-weight: bold;
   content: "Composer: ";
-  margin:top: 10px;
+}
+
+#pers12345 {
+  margin-top: 20px;
 }
 
 

@@ -1822,9 +1822,10 @@ mei-filedesc > mei-titlestmt > mei-title {
   display: block;
 }
 
-mei-filedesc > mei-titlestmt > mei-respstmt > mei-persname #pers12345: before {
+#pers12345::before {
   font-weight: bold;
-  content: "Composer: ";
+  content: "/A Composer: ";
+  white-space: pre;
 }
 
 

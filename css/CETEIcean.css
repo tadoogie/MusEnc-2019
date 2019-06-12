@@ -1807,7 +1807,7 @@ tei-zone {
   /* Empty Rule Set */
 }
 
-mei-title {
+mei-titlestmt mei-title {
   font-size: 24pt;
   color: red;
   display: block;

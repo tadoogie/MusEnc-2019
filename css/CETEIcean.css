@@ -1809,7 +1809,7 @@ tei-zone {
 
 mei-title {
   font-size: 24pt;
-  color: #292929;
+  color: red;
 }
 
 /* styles for html shell and html elements in TEI (e.g.,<a> and <img>) */

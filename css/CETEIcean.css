@@ -1872,8 +1872,13 @@ mei-pubstmt > mei-date::after {
 mei-pubstmt > mei-availability > mei-userestrict {
   font-style: italic;
   display: block;
-  margin-bottom: 1em;
+  margin-top: 1em;
 }
+
+mei-seriesstmt {
+  display: none;
+}
+
 
 
 /* styles for html shell and html elements in TEI (e.g.,<a> and <img>) */

@@ -1879,10 +1879,22 @@ mei-seriesstmt {
   display: none;
 }
 
-mei-filedesc > mei-sourcedesc {
+mei-filedesc > mei-sourcedesc > mei-source > mei-identifier {
   display: none;
 }
 
+mei-filedesc > mei-sourcedesc > mei-source > mei-identifier {
+  display: none;
+}
+
+mei-filedesc > mei-sourcedesc > mei-source > mei-titlestmt::before {
+  content: "Encoded from" '\a';
+  white-space: pre;
+}
+
+mei-filedesc > mei-sourcedesc > mei-source > mei-titlestmt {
+  display: block;
+}
 /* styles for html shell and html elements in TEI (e.g.,<a> and <img>) */
 html > body {
   margin: 0;

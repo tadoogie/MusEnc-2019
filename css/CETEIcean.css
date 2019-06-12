@@ -1859,7 +1859,7 @@ mei-pubstmt > mei-address {
   display: none;
 }
 
-mei-pubstmt > mei-availability > mei-userrestrict {
+mei-pubstmt > mei-availability > mei-userestrict {
   font-style: italic;
   display: block;
 }

@@ -1879,7 +1879,9 @@ mei-seriesstmt {
   display: none;
 }
 
-
+mei-filedesc > mei-sourcedesc {
+  display: none;
+}
 
 /* styles for html shell and html elements in TEI (e.g.,<a> and <img>) */
 html > body {

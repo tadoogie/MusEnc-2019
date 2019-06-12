@@ -1812,7 +1812,6 @@ mei-title [id="title12345"] {
 }
 
 mei-filedesc mei-titlestmt mei-title {
-  font-size: 18pt;
   color: red;
   display: block;
 }

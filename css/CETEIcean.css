@@ -1807,6 +1807,11 @@ tei-zone {
   /* Empty Rule Set */
 }
 
+mei-title {
+  font-size: 24pt;
+  color: #292929;
+}
+
 /* styles for html shell and html elements in TEI (e.g.,<a> and <img>) */
 html > body {
   margin: 0;

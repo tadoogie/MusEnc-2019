@@ -1859,6 +1859,11 @@ mei-pubstmt > mei-address {
   display: none;
 }
 
+mei-pubstmt > mei-date::before {
+  font-weight: bold;
+  content: "Encoded date: "
+}
+
 mei-pubstmt > mei-availability > mei-userestrict {
   font-style: italic;
   display: block;

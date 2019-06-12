@@ -1832,6 +1832,11 @@ mei-filedesc > mei-titlestmt> mei-respstmt > mei-persname[role="composer"]::befo
   content: "Composer: ";
 }
 
+mei-filedesc > mei-titlestmt> mei-respstmt > mei-persname[role="encoder"]::before {
+  font-weight: bold;
+  content: "Encoded by: ";
+}
+
 #pers12345 {
   margin-top: 2em;
 }

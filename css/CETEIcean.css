@@ -1864,6 +1864,11 @@ mei-pubstmt > mei-date::before {
   content: "Encoded date: "
 }
 
+mei-pubstmt > mei-date::after {
+  content: '\a';
+  white-space: pre;
+}
+
 mei-pubstmt > mei-availability > mei-userestrict {
   font-style: italic;
   display: block;

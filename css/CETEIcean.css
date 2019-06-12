@@ -1820,9 +1820,9 @@ mei-filedesc > mei-titlestmt > mei-title {
   display: block;
 }
 
-/*mei-sourcedesc {
-  display:none;
-} */
+mei-filedesc > mei-titlestmt > mei-respstmt:before {
+  content: "Composer: ";
+}
 
 /* styles for html shell and html elements in TEI (e.g.,<a> and <img>) */
 html > body {

@@ -174,8 +174,6 @@
                         </staff>
                         <staff n="2">
                            <layer n="1">
-                              <app>
-                                <lem>
                                   <beam>
                                      <note pname="f" oct="2" dur="16" stem.dir="down"/>
                                      <note pname="c" oct="3" dur="16" stem.dir="down"/>
@@ -184,17 +182,6 @@
                                      <note pname="b" oct="3" dur="16" stem.dir="down" accid.ges="f"/>
                                      <note pname="c" oct="3" dur="16" stem.dir="down"/>
                                   </beam>
-                                </lem>
-                                <rdg>
-                                  <beam>
-                                     <note pname="e" oct="2" dur="16" stem.dir="down"/>
-                                     <note pname="d" oct="3" dur="16" stem.dir="down"/>
-                                     <note pname="b" oct="3" dur="16" stem.dir="down" accid.ges="f"/>
-                                     <note pname="b" oct="3" dur="16" stem.dir="down"/>
-                                     <note pname="a" oct="3" dur="16" stem.dir="down" accid.ges="f"/>
-                                     <note pname="d" oct="3" dur="16" stem.dir="down"/>
-                                  </beam>
-                                </rdg>
                               <beam>
                                  <note pname="f" oct="2" dur="16" stem.dir="down"/>
                                  <note pname="c" oct="3" dur="16" stem.dir="down"/>

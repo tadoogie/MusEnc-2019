@@ -1807,26 +1807,29 @@ tei-zone {
   /* Empty Rule Set */
 }
 
+mei-filedesc > mei-titlestmt {
+  display: block;
+}
+
 #title12345 {
   font-size: 24pt;
-  text-decoration-line:underline;
 }
 
 mei-title[type="subordinate"] {
   font-size: 18pt;
   font-variant-caps: small-caps;
+  margin-top: -10px;
 }
 
 mei-filedesc > mei-titlestmt > mei-title {
   color: #595b66;
-  display: block;
-
 }
 
 mei-filedesc > mei-titlestmt > mei-respstmt:before {
   font-weight: bold;
   content: "Composer: ";
 }
+
 
 /* styles for html shell and html elements in TEI (e.g.,<a> and <img>) */
 html > body {

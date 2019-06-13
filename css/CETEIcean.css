@@ -1851,7 +1851,7 @@ mei-filedesc > mei-titlestmt> mei-respstmt > mei-persname[role="encoder"]::after
   margin-top: 2em;
 }
 
-mei-pubstmt > mei-respstmt {
+mei-filedesc > mei-pubstmt > mei-respstmt {
   display: none;
 }
 

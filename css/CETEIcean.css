@@ -1942,7 +1942,7 @@ mei-pubplace::before {
   white-space: pre;
 } */
 
-mei-filedesc > mei-sourcedesc > mei-source::after {
+mei-filedesc > mei-sourcedesc > mei-source > mei-pubstmt::after {
   content: '\a''\a';
   white-space: pre;
 }

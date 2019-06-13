@@ -1888,7 +1888,8 @@ mei-filedesc > mei-sourcedesc > mei-source > mei-identifier {
 }
 
 mei-filedesc > mei-sourcedesc > mei-source > mei-titlestmt::before {
-  content: "Encoded from" '\a';
+
+  content: "/a Encoded from";
   white-space: pre;
 }
 

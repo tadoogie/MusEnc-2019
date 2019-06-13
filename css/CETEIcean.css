@@ -1861,7 +1861,7 @@ mei-pubstmt > mei-address {
 
 mei-filedesc > mei-pubstmt > mei-date::before {
   font-weight: bold;
-  content: "Encoded date: "
+  content: "Date encoded: "
 }
 
 mei-filedesc > mei-pubstmt > mei-date::after {

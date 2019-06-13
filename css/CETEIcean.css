@@ -1921,13 +1921,13 @@ mei-filedesc > mei-sourcedesc > mei-source > mei-titlestmt > mei-respstmt > mei-
   white-space: pre;
 }
 
-mei-filedesc > mei-sourcedesc > mei-source > mei-pubstmt > mei-meirespstmt > mei-corpname::before {
+mei-filedesc > mei-sourcedesc > mei-source > mei-pubstmt > mei-respstmt > mei-corpname::before {
   font-weight: bold;
   content: '\a'"Published by: "
   white-space: pre;
 }
 
-mei-filedesc > mei-sourcedesc > mei-source > mei-pubstmt > mei-corpname > mei-pubplace::before {
+mei-filedesc > mei-sourcedesc > mei-source > mei-pubstmt > mei-pubplace::before {
   font-weight: bold;
   content: '\a'"Publisher location: "
   white-space: pre;

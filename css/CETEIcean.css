@@ -1829,21 +1829,13 @@ mei-filedesc > mei-titlestmt > mei-respstmt {
 
 mei-filedesc > mei-titlestmt> mei-respstmt > mei-persname[role="composer"]::before {
   font-weight: bold;
-  content: "Composer: ";
-}
-
-mei-filedesc > mei-titlestmt> mei-respstmt > mei-persname[role="composer"]::after {
-  content: '\a';
+  content: '\a'"Composer: ";
   white-space: pre;
 }
 
 mei-filedesc > mei-titlestmt> mei-respstmt > mei-persname[role="encoder"]::before {
   font-weight: bold;
-  content: "Encoded by: ";
-}
-
-mei-filedesc > mei-titlestmt> mei-respstmt > mei-persname[role="encoder"]::after {
-  content: '\a';
+  content: '\a'"Encoded by: ";
   white-space: pre;
 }
 
@@ -1895,7 +1887,6 @@ mei-filedesc > mei-sourcedesc > mei-source > mei-identifier {
 mei-filedesc > mei-sourcedesc > mei-source > mei-titlestmt::before {
   font-weight: bold;
   content: "Original source: ";
-  white-space: pre;
 }
 
 mei-filedesc > mei-sourcedesc > mei-source > mei-titlestmt {
@@ -1904,7 +1895,6 @@ mei-filedesc > mei-sourcedesc > mei-source > mei-titlestmt {
 
 mei-filedesc > mei-sourcedesc > mei-source > mei-titlestmt > mei-title[type="uniform"]::before {
   content: "(";
-  white-space: pre;
 }
 
 mei-filedesc > mei-sourcedesc > mei-source > mei-titlestmt > mei-title[type="uniform"] {
@@ -1913,7 +1903,6 @@ mei-filedesc > mei-sourcedesc > mei-source > mei-titlestmt > mei-title[type="uni
 
 mei-filedesc > mei-sourcedesc > mei-source > mei-titlestmt > mei-title[type="uniform"]::after {
   content: ")";
-  white-space: pre;
 }
 
 mei-filedesc > mei-sourcedesc > mei-source > mei-titlestmt > mei-respstmt > mei-persname[role="composer"] {

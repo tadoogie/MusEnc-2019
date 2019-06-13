@@ -1875,6 +1875,11 @@ mei-filedesc > mei-pubstmt > mei-availability > mei-userestrict {
   margin-top: 0.5em;
 }
 
+mei-filedesc > mei-pubstmt > mei-availability > mei-userestrict::after {
+  content: '\a \a';
+  white-space: pre;
+}
+
 mei-seriesstmt {
   display: none;
 }
@@ -1889,7 +1894,7 @@ mei-filedesc > mei-sourcedesc > mei-source > mei-identifier {
 
 mei-filedesc > mei-sourcedesc > mei-source > mei-titlestmt::before {
   font-weight: bold;
-  content: '/a /a' "Original source";
+  content: "Original source";
   white-space: pre;
 }
 

@@ -1922,32 +1922,32 @@ mei-filedesc > mei-sourcedesc > mei-source > mei-titlestmt > mei-respstmt > mei-
 
 mei-filedesc > mei-sourcedesc > mei-source > mei-titlestmt > mei-respstmt > mei-persname[role="editor"]::before {
   font-weight: bold;
-  content: '/a'"Edited by: ";
+  content: '\a'"Edited by: ";
   white-space: pre;
 }
 
 mei-filedesc > mei-sourcedesc > mei-source > mei-pubstmt > mei-corpname::before {
   font-weight: bold;
-  content: '/a'"Published in: "
+  content: '\a'"Published in: "
   white-space: pre;
 }
 
-mei-filedesc > mei-sourcedesc > mei-source > mei-pubstmt::after {
-  content: '/a'
+/*mei-filedesc > mei-sourcedesc > mei-source > mei-pubstmt::after {
+  content: '\a'
   white-space: pre;
-}
+} */
 
 mei-filedesc > mei-sourcedesc > mei-source > mei-physdesc::before {
   font-weight: bold;
-  content: '/a'"Publisher plate number: ";
+  content: '\a'"Publisher plate number: ";
   white-space: pre;
 }
 
-mei-filedesc > mei-sourcedesc > mei-source > mei-physdesc::after {
+/*mei-filedesc > mei-sourcedesc > mei-source > mei-physdesc::after {
   font-weight: bold;
-  content: '/a';
+  content: '\a';
   white-space: pre;
-}
+}*/
 
 
 /* styles for html shell and html elements in TEI (e.g.,<a> and <img>) */

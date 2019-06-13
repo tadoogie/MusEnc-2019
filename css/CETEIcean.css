@@ -1896,12 +1896,37 @@ mei-filedesc > mei-sourcedesc > mei-source > mei-titlestmt::before {
   font-weight: bold;
   content: "Original source"'\a';
   white-space: pre;
-  color: red;
 }
 
 mei-filedesc > mei-sourcedesc > mei-source > mei-titlestmt {
   display: block;
 }
+
+mei-filedesc > mei-sourcedesc > mei-source > mei-titlestmt > mei-title[type="uniform"]::before {
+  content: "(";
+  white-space: pre;
+}
+
+mei-filedesc > mei-sourcedesc > mei-source > mei-titlestmt > mei-title[type="uniform"] {
+  font-style: italic;
+}
+
+mei-filedesc > mei-sourcedesc > mei-source > mei-titlestmt > mei-title[type="uniform"]::after {
+  content: ")";
+  white-space: pre;
+}
+
+mei-filedesc > mei-sourcedesc > mei-source > mei-titlestmt > mei-respstmt[role="composer"] {
+  display: none;
+}
+
+mei-filedesc > mei-sourcedesc > mei-source > mei-titlestmt > mei-respstmt[role="editor"]::before {
+  content: "Edited by: ";
+  whitespace: pre;
+}
+
+
+
 /* styles for html shell and html elements in TEI (e.g.,<a> and <img>) */
 html > body {
   margin: 0;

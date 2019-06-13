@@ -1894,7 +1894,7 @@ mei-filedesc > mei-sourcedesc > mei-source > mei-identifier {
 
 mei-filedesc > mei-sourcedesc > mei-source > mei-titlestmt::before {
   font-weight: bold;
-  content: "Original source"'\a';
+  content: "Original source: ";
   white-space: pre;
 }
 
@@ -1921,10 +1921,22 @@ mei-filedesc > mei-sourcedesc > mei-source > mei-titlestmt > mei-respstmt > mei-
 }
 
 mei-filedesc > mei-sourcedesc > mei-source > mei-titlestmt > mei-respstmt > mei-persname[role="editor"]::before {
-  content: "Edited by: ";
-  whitespace: pre;
+  font-weight: bold;
+  content: '/a'"Edited by: ";
+  white-space: pre;
 }
 
+mei-filedesc > mei-sourcedesc > mei-source > mei-pubstmt::before {
+  font-weight: bold;
+  content: '/a'"Published in: "
+  white-space: pre;
+}
+
+mei-filedesc > mei-sourcedesc > mei-source > mei-physdesc::before {
+  font-weight: bold;
+  content: '/a'"Publisher plate number: ";
+  white-space: pre;
+}
 
 
 /* styles for html shell and html elements in TEI (e.g.,<a> and <img>) */

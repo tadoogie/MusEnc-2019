@@ -1926,7 +1926,7 @@ mei-filedesc > mei-sourcedesc > mei-source > mei-titlestmt > mei-respstmt > mei-
   white-space: pre;
 }
 
-mei-filedesc > mei-sourcedesc > mei-source > mei-pubstmt::before {
+mei-filedesc > mei-sourcedesc > mei-source > mei-pubstmt > mei-corpname::before {
   font-weight: bold;
   content: '/a'"Published in: "
   white-space: pre;

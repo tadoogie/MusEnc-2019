@@ -1895,6 +1895,7 @@ mei-filedesc > mei-sourcedesc > mei-source > mei-identifier {
 mei-filedesc > mei-sourcedesc > mei-source > mei-titlestmt::before {
   font-weight: bold;
   content: "Original source" '\a';
+  color: red;
 }
 
 mei-filedesc > mei-sourcedesc > mei-source > mei-titlestmt {

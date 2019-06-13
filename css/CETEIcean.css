@@ -1950,6 +1950,17 @@ mei-filedesc > mei-sourcedesc > mei-source > mei-physdesc::before {
   white-space: pre;
 }*/
 
+mei-encodingdesc {
+  display: none;
+}
+
+mei-workdesc {
+  display: none;
+}
+
+mei-revisiondesc {
+  display: none;
+}
 
 /* styles for html shell and html elements in TEI (e.g.,<a> and <img>) */
 html > body {

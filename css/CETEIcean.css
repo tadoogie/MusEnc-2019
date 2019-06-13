@@ -1927,13 +1927,13 @@ mei-filedesc > mei-sourcedesc > mei-source > mei-physdesc {
 
 mei-filedesc > mei-sourcedesc > mei-source > mei-pubstmt > mei-respstmt > mei-corpname::before {
   font-weight: bold;
-  content: '\a'"Published by: "
+  content: '\a'"Published by: ";
   white-space: pre;
 }
 
 mei-pubplace::before {
   font-weight: bold;
-  content: '\a'"Publisher location: "
+  content: '\a'"Publisher location: ";
   white-space: pre;
 }
 

@@ -1918,7 +1918,12 @@ mei-filedesc > mei-sourcedesc > mei-source > mei-titlestmt > mei-respstmt > mei-
 mei-filedesc > mei-sourcedesc > mei-source > mei-titlestmt > mei-respstmt > mei-persname[role="editor"]::before {
   font-weight: bold;
   content: '\a'"Edited by: ";
+  color: red;
   white-space: pre;
+}
+
+mei-filedesc > mei-sourcedesc > mei-source > mei-physdesc {
+  display: none;
 }
 
 mei-source > mei-pubstmt > mei-respstmt > mei-corpname::before {

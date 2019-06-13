@@ -1909,15 +1909,27 @@ mei-filedesc > mei-sourcedesc > mei-source > mei-titlestmt > mei-respstmt > mei-
   display: none;
 }
 
+mei-filedesc > mei-sourcedesc > mei-source > mei-titlestmt > mei-respstmt > mei-persname[role="dedicatee"]::before {
+  font-weight: bold;
+  content: '\a'"Dedicated to: ";
+  white-space: pre;
+}
+
 mei-filedesc > mei-sourcedesc > mei-source > mei-titlestmt > mei-respstmt > mei-persname[role="editor"]::before {
   font-weight: bold;
   content: '\a'"Edited by: ";
   white-space: pre;
 }
 
-mei-filedesc > mei-sourcedesc > mei-source > mei-pubstmt > mei-corpname::before {
+mei-filedesc > mei-sourcedesc > mei-source > mei-pubstmt > mei-meirespstmt > mei-corpname::before {
   font-weight: bold;
-  content: '\a'"Published in: "
+  content: '\a'"Published by: "
+  white-space: pre;
+}
+
+mei-filedesc > mei-sourcedesc > mei-source > mei-pubstmt > mei-corpname > mei-pubplace::before {
+  font-weight: bold;
+  content: '\a'"Publisher location: "
   white-space: pre;
 }
 

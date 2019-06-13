@@ -1932,9 +1932,20 @@ mei-filedesc > mei-sourcedesc > mei-source > mei-pubstmt::before {
   white-space: pre;
 }
 
+mei-filedesc > mei-sourcedesc > mei-source > mei-pubstmt::after {
+  content: '/a'
+  white-space: pre;
+}
+
 mei-filedesc > mei-sourcedesc > mei-source > mei-physdesc::before {
   font-weight: bold;
   content: '/a'"Publisher plate number: ";
+  white-space: pre;
+}
+
+mei-filedesc > mei-sourcedesc > mei-source > mei-physdesc::after {
+  font-weight: bold;
+  content: '/a';
   white-space: pre;
 }
 

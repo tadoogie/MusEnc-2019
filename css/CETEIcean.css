@@ -1916,11 +1916,11 @@ mei-filedesc > mei-sourcedesc > mei-source > mei-titlestmt > mei-title[type="uni
   white-space: pre;
 }
 
-mei-filedesc > mei-sourcedesc > mei-source > mei-titlestmt > mei-respstmt[role="composer"] {
+mei-filedesc > mei-sourcedesc > mei-source > mei-titlestmt > mei-respstmt > mei-persname[role="composer"] {
   display: none;
 }
 
-mei-filedesc > mei-sourcedesc > mei-source > mei-titlestmt > mei-respstmt[role="editor"]::before {
+mei-filedesc > mei-sourcedesc > mei-source > mei-titlestmt > mei-respstmt > mei-persname[role="editor"]::before {
   content: "Edited by: ";
   whitespace: pre;
 }

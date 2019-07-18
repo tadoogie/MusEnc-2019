@@ -21,33 +21,33 @@
         bottom: 0;
     }
     </style>
+    <script src="https://www.verovio.org/javascript/develop/verovio-toolkit.js" type="text/javascript" ></script>
 </head>
 <body>
     <div class="header">How to use the Verovio App</div>
-    <div id="app">Verovio is loading...</div>
-    <script type="module">
-        import 'https://www.verovio.org/javascript/app/verovio-app.js';
-
-        const options = {
-            defaultView: 'responsive', // default is 'responsive', alternative is 'document'
-            defaultZoom: 3, // 0-7, default is 4
-            enableResponsive: true, // default is true
-            enableDocument: true // default is true
-        }
-
-        // A MusicXML file
-        var file = 'data/bachJesuJesu.mei';
+    <div id="svg_output">Verovio is loading...</div>
+    <script type="text/javascript">
+     
+        // A MEI file
+        var file = 'data/example.mei';
         // A MEI file
         //var file = 'https://www.verovio.org/editor/brahms.mei';
 
-        const app = new Verovio.App(document.getElementById("app"), options);
-        fetch(file)
-            .then(function(response) {
-                return response.text();
-            })
-            .then(function(text) {
-                app.loadData(text);
+        var vrvToolkit = new verovio.toolkit();
+
+            ////////////////////////////////////
+            /* Load the file using a HTTP GET */
+            ////////////////////////////////////
+            $.ajax({
+                url: "#file"
+                , dataType: "text"
+                , success: function(data) {
+                    var svg = vrvToolkit.renderData(data, {});
+                    $("#svg_output").html(svg);
+                }
             });
+ 
+        
     </script>
   <p>Score rendering provided by <a href="http://www.verovio.org">Verovio</a>. Metadata rendered by <a href="https://github.com/TEIC/CETEIcean/"> CETIcean</a>.</p>
 </body>

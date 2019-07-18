@@ -39,11 +39,11 @@
             /* Load the file using a HTTP GET */
             ////////////////////////////////////
             $.ajax({
-                url: "#file"
+                url: "data/example.mei"
                 , dataType: "text"
                 , success: function(data) {
                     var svg = vrvToolkit.renderData(data, {});
-                    $("data/example.mei").html(svg);
+                    $("#svg_output").html(svg);
                 }
             });
  
